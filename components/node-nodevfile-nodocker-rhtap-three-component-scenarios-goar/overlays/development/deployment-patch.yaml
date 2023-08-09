@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: node-nodevfile-nodocker-rhtap-three-component-scenarios-goar
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-agng-tenant/mc-three-scenarios/node-nodevfile-nodocker-rhtap-three-component-scenarios-goar@sha256:74047b4ecd823b1572a772c789a4deedf67dea017be171f3a652d9cbe696018b
+        name: my-nodejs
+        resources: {}
+status: {}
